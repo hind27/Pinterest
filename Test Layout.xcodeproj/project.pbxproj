@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31AF8C0216EA872009557A0 /* Pinterestlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AF8BF216EA872009557A0 /* Pinterestlayout.swift */; };
+		B321398D216D7957009ECD5C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321398C216D7957009ECD5C /* CollectionViewCell.swift */; };
 		B37C8983216B9CE900E49B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C8982216B9CE900E49B01 /* AppDelegate.swift */; };
 		B37C8985216B9CE900E49B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C8984216B9CE900E49B01 /* ViewController.swift */; };
 		B37C8988216B9CE900E49B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37C8986216B9CE900E49B01 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31AF8BF216EA872009557A0 /* Pinterestlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinterestlayout.swift; sourceTree = "<group>"; };
+		B321398C216D7957009ECD5C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B37C897F216B9CE900E49B01 /* Test Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37C8982216B9CE900E49B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37C8984216B9CE900E49B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +41,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3087FCC21761F0A000F7836 /* Networking  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Networking ";
+			sourceTree = "<group>";
+		};
+		B321398B216D78D7009ECD5C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B321398C216D7957009ECD5C /* CollectionViewCell.swift */,
+				B31AF8BF216EA872009557A0 /* Pinterestlayout.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		B37C8976216B9CE900E49B01 = {
 			isa = PBXGroup;
 			children = (
-				B37C8981216B9CE900E49B01 /* Test Layout */,
+				B37C8981216B9CE900E49B01 /* Pinterest */,
 				B37C8980216B9CE900E49B01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,9 +73,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B37C8981216B9CE900E49B01 /* Test Layout */ = {
+		B37C8981216B9CE900E49B01 /* Pinterest */ = {
 			isa = PBXGroup;
 			children = (
+				B3087FCC21761F0A000F7836 /* Networking  */,
+				B321398B216D78D7009ECD5C /* view */,
 				B37C8982216B9CE900E49B01 /* AppDelegate.swift */,
 				B37C8984216B9CE900E49B01 /* ViewController.swift */,
 				B37C8986216B9CE900E49B01 /* Main.storyboard */,
@@ -64,7 +86,7 @@
 				B37C8991216B9CEA00E49B01 /* Info.plist */,
 				B37C8989216B9CEA00E49B01 /* Test_Layout.xcdatamodeld */,
 			);
-			path = "Test Layout";
+			path = Pinterest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31AF8C0216EA872009557A0 /* Pinterestlayout.swift in Sources */,
 				B37C898B216B9CEA00E49B01 /* Test_Layout.xcdatamodeld in Sources */,
 				B37C8985216B9CE900E49B01 /* ViewController.swift in Sources */,
+				B321398D216D7957009ECD5C /* CollectionViewCell.swift in Sources */,
 				B37C8983216B9CE900E49B01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
