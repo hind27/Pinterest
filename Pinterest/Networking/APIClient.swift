@@ -13,13 +13,12 @@ enum  Eiher<T> {
 }
 enum APIError :Error
 {
-    case unknown ,badResponse ,jsonDecoder
+    case unknown ,badResponse ,jsonDecoder , imageDownload, imageConvert
 }
 
 protocol APIClient {
     var session :URLSession { get }
     func get<T: Codable>(with request: URLRequest , completion: @escaping (Eiher<[T]>) -> Void )
-    
 }
 extension APIClient {
     var session :URLSession { return URLSession.shared }

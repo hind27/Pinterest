@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Test Layout.xcodeproj">
+      location = "self:/Users/hind/Documents/Pinterest/Pinterest.xcodeproj">
    </FileRef>
 </Workspace>

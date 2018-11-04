@@ -27,7 +27,7 @@ extension Endpoint {
     }
 }
 enum  order :String {
-     case popular ,lastest,oldest
+     case popular ,latest ,oldest
 }
 enum UnspashEndpoint: Endpoint {
     case photos( id :String , order :order)

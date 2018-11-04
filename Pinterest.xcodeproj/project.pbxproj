@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B31AF8C0216EA872009557A0 /* Pinterestlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AF8BF216EA872009557A0 /* Pinterestlayout.swift */; };
 		B321398D216D7957009ECD5C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321398C216D7957009ECD5C /* CollectionViewCell.swift */; };
+		B32FECC22180D8EC0033373B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FECC12180D8EC0033373B /* ViewModel.swift */; };
 		B343FF582177699200EB5D03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B343FF572177699200EB5D03 /* Default-568h@2x.png */; };
 		B343FF5D21776E3600EB5D03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343FF5C21776E3600EB5D03 /* APIClient.swift */; };
 		B350758F217CB2C300D503F6 /* Unplashimages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350758E217CB2C300D503F6 /* Unplashimages.swift */; };
@@ -25,12 +26,13 @@
 /* Begin PBXFileReference section */
 		B31AF8BF216EA872009557A0 /* Pinterestlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinterestlayout.swift; sourceTree = "<group>"; };
 		B321398C216D7957009ECD5C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B32FECC12180D8EC0033373B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B343FF572177699200EB5D03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B343FF5C21776E3600EB5D03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B350758E217CB2C300D503F6 /* Unplashimages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unplashimages.swift; sourceTree = "<group>"; };
 		B3507590217CC24300D503F6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B3507592217CDC1400D503F6 /* unsplashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unsplashClient.swift; sourceTree = "<group>"; };
-		B37C897F216B9CE900E49B01 /* Test Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37C897F216B9CE900E49B01 /* Pinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37C8982216B9CE900E49B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37C8984216B9CE900E49B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B37C8987216B9CE900E49B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		B32FECC02180CF770033373B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B32FECC12180D8EC0033373B /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		B343FF5B21776E0800EB5D03 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +93,7 @@
 		B37C8980216B9CE900E49B01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B37C897F216B9CE900E49B01 /* Test Layout.app */,
+				B37C897F216B9CE900E49B01 /* Pinterest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +101,7 @@
 		B37C8981216B9CE900E49B01 /* Pinterest */ = {
 			isa = PBXGroup;
 			children = (
+				B32FECC02180CF770033373B /* ViewModels */,
 				B343FF5B21776E0800EB5D03 /* Networking */,
 				B321398B216D78D7009ECD5C /* view */,
 				B37C8982216B9CE900E49B01 /* AppDelegate.swift */,
@@ -107,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B37C897E216B9CE900E49B01 /* Test Layout */ = {
+		B37C897E216B9CE900E49B01 /* Pinterest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B37C8994216B9CEA00E49B01 /* Build configuration list for PBXNativeTarget "Test Layout" */;
+			buildConfigurationList = B37C8994216B9CEA00E49B01 /* Build configuration list for PBXNativeTarget "Pinterest" */;
 			buildPhases = (
 				B37C897B216B9CE900E49B01 /* Sources */,
 				B37C897C216B9CE900E49B01 /* Frameworks */,
@@ -119,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = "Test Layout";
+			name = Pinterest;
 			productName = "Test Layout";
-			productReference = B37C897F216B9CE900E49B01 /* Test Layout.app */;
+			productReference = B37C897F216B9CE900E49B01 /* Pinterest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B37C897A216B9CE900E49B01 /* Build configuration list for PBXProject "Test Layout" */;
+			buildConfigurationList = B37C897A216B9CE900E49B01 /* Build configuration list for PBXProject "Pinterest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B37C897E216B9CE900E49B01 /* Test Layout */,
+				B37C897E216B9CE900E49B01 /* Pinterest */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +190,7 @@
 			files = (
 				B31AF8C0216EA872009557A0 /* Pinterestlayout.swift in Sources */,
 				B37C898B216B9CEA00E49B01 /* Test_Layout.xcdatamodeld in Sources */,
+				B32FECC22180D8EC0033373B /* ViewModel.swift in Sources */,
 				B3507591217CC24300D503F6 /* Endpoint.swift in Sources */,
 				B3507593217CDC1400D503F6 /* unsplashClient.swift in Sources */,
 				B37C8985216B9CE900E49B01 /* ViewController.swift in Sources */,
@@ -351,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B37C897A216B9CE900E49B01 /* Build configuration list for PBXProject "Test Layout" */ = {
+		B37C897A216B9CE900E49B01 /* Build configuration list for PBXProject "Pinterest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B37C8992216B9CEA00E49B01 /* Debug */,
@@ -360,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B37C8994216B9CEA00E49B01 /* Build configuration list for PBXNativeTarget "Test Layout" */ = {
+		B37C8994216B9CEA00E49B01 /* Build configuration list for PBXNativeTarget "Pinterest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B37C8995216B9CEA00E49B01 /* Debug */,
