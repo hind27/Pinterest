@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     let viewModel = ViewModel(client: UnsplashClient())
-    let images = [#imageLiteral(resourceName: "image-1"),#imageLiteral(resourceName: "image-2"),#imageLiteral(resourceName: "image-3"),#imageLiteral(resourceName: "image-4"),#imageLiteral(resourceName: "image-5"),#imageLiteral(resourceName: "image-6")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
         if let layout = collectionView.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }

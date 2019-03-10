@@ -9,10 +9,11 @@
 import Foundation
 
 protocol Endpoint {
-    var baseUrl :String{ get }
-    var path :String{get}
-    var urlParameters :[URLQueryItem] {get}
+    var baseUrl: String { get }
+    var path: String { get }
+    var urlParameters: [URLQueryItem] { get }
 }
+
 extension Endpoint {
     var urlComponent: URLComponents {
         var urlComponent = URLComponents(string: baseUrl)
@@ -26,14 +27,18 @@ extension Endpoint {
         return URLRequest(url: urlComponent.url!)
     }
 }
-enum  order :String {
-     case popular ,latest ,oldest
+
+enum Order: String {
+    case popular, latest, oldest
 }
+
 enum UnspashEndpoint: Endpoint {
-    case photos( id :String , order :order)
-    var baseUrl: String{
-        return "http://unsplash.com"
+    case photos(id: String, order: Order)
+    
+    var baseUrl: String {
+        return UnsplashClient.baseUrl
     }
+    
     var path: String {
         switch self {
         case .photos:
@@ -44,13 +49,12 @@ enum UnspashEndpoint: Endpoint {
     var urlParameters: [URLQueryItem] {
         switch self {
         case .photos(let id, let order):
-            
             return [
                 URLQueryItem(name: "client_id", value: id),
                 URLQueryItem(name: "order_by", value: order.rawValue)
             ]
         }
-        
     }
-    
 }
+
+

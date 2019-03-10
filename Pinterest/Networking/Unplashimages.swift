@@ -9,7 +9,7 @@
 import Foundation
 typealias Photos = [Photo]
 struct Photo : Codable {
-    let id: String
+     let id: String
      let urls: URLS
 }
 
